@@ -9,8 +9,12 @@
 
 }
 .logs{
-	animation: transitionIn ease-in-out 1s;
+	position: relative;
+	animation: slidedown ease-in-out 1.5s;
 
+}
+#banner{
+	animation: slidein ease-in-out 1.5s;
 }
 @keyframes transitionIn {
 	from {
@@ -25,7 +29,22 @@
 
 	}
 }
-
+@keyframes slidein {
+	0% {
+		left: -1000px;
+	}
+	100%{
+		left: 0px;
+	}
+}
+@keyframes slidedown {
+	0% {
+		top: -200px;
+	}
+	100%{
+		top: 0px;
+	}
+}
 
 /*
 	Verti by HTML5 UP
@@ -2215,6 +2234,7 @@ input, select, textarea {
 
 	#navPanel, #navToggle {
 		display: none;
+		
 	}
 
 	@media screen and (max-width: 980px) {
